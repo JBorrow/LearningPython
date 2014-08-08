@@ -1,0 +1,66 @@
+\section{Control Structures}
+
+Control structures are how we get things done in programming, it is how the
+computer makes decisions. We can ask the computer if something is true, for
+example $7 > 4$, and then act on this information. First, we must introduce
+booleans.
+
+\subsection {Booleans}
+
+Booleans are another type of variable, that are best introduced alongside these
+structures. There are two possible states for a boolean variable, 'True' or
+'False'. In python it is very important that the first letter is capitalised.
+
+\subsection{if Statements}
+
+These are the foundation of control structures. What we say to the computer is,
+if this condition is true, execute this bit of code. If it's not, then do this
+instead. This turns out to be a very powerful tool. Here's an example:
+
+\begin{lstlisting}
+    >>> x = 3
+    >>> if x < 4:
+    ...     #if x is less than 4 execute this
+    ...     print "x is less than 4"
+    ... else:
+    ...     #otherwise execute this
+    ...     print "x is bigger than or equal to 4"
+    ...
+    x is less than 4
+\end{lstlisting}
+
+There are a few new things that we have introduced here, aside from the if
+statement. We can add a comment in python by having a \# anywhere on the line.
+If the interpreter finds a \#, it ignores all other characters after that.
+
+This allows us to create comments that aid people inheriting our code figure
+out what it means a lot more easily than having to pick through it line by line.
+Commenting your code is immensely important and is a good habit to get into.
+However, don't excessively comment your code as this will simply frustrate
+whoever has to read it. As you do more and more programming you will learn what
+the correct amount of comments is - this is not something that is easily taught!
+
+\subsubsection{elif Statements}
+
+If you have more than one condition you would like to check, you can use elif
+statements. This is short for 'else if' and is executed if the first if
+statement is not true, but it is. For example:
+
+\begin{lstlisting}
+    >>> x = 5
+    >>> if x < 4:
+    ...     #if x is less than 4 execute this
+    ...     print "x is less than 4"
+    ... elif x < 10:
+    ...     print "x is less than 10, but bigger than 4"
+    ... else:
+    ...     #otherwise execute this
+    ...     print "x is bigger than or equal to 4"
+    ...
+    x is less than 10, but bigger than 4
+\end{lstlisting}
+
+You can have as many elif statements as you would like, so you can check an
+unlimited number of statements.
+
+

@@ -7,9 +7,9 @@ previous section on setting up python on your system, and now when you type
 'python' in the terminal you are presented with three greater than signs, like
 this:
 
-\begin{minted}
+\begin{lstlisting}
     >>>
-\end{minted}
+\end{lstlisting}
 
 \subsection{Strings and Variables}
 
@@ -26,29 +26,26 @@ characters are enclosed in a set of quotes or inverted commas.
 
 So if I want to give a variable called 'hi' a value of "Hello World!":
 
-\begin{minted}
+\begin{lstlisting}
     >>> hi = "Hello World!"
-\end{minted}
+\end{lstlisting}
 
 The next thing we want to be able to do is print some output to the screen. In
 python, we do this by using 'print'. In python 2.x, this is a pseudofunction,
 meaning it doesn't need brackets - we will learn more about this later. To print
 the value of dog to the screen, we simply need to write:
 
-\begin{minted}
+\begin{lstlisting}
     >>> print hi
-    \bf{Hello World!}
-\end{minted}
+    'Hello World!'
+\end{lstlisting}
 
-In this book, I will have statements that we type into the prompt/editor as
-a regular monospaced font, and return values in bold.
-
-\subsection{Types of Variable and Definitions}
+\subsection{Types of Variable}
 
 Now we've got you hooked after writing your first computer program, we have to
 cover some boring stuff. If you want to, you can skip this section and come back
 if some of the words I start to use in the later sections confuse you. We'll
-start by talking about the three basic variable types.
+start by talking about the four basic variable types.
 
 \subsubsection{Integers}
 
@@ -58,14 +55,14 @@ value you want to give them. However, the interesting thing here is division.
 When you divide two integers in python, it returns an integer too. This is
 accomplished by simply discarding the remainder. For example:
 
-\begin{minted}
+\begin{lstlisting}
     >>> 5/2
-    \bf{2}
+    2
     >>> 20/4
-    \bf{5}
+    5
     >>> 121/120
-    \bf{1}
-\end{minted}
+    1
+\end{lstlisting}
 
 This process is called 'integer division', rather than decimal or 'float
 division'.
@@ -77,13 +74,108 @@ decimals.
 To get the remainder from this division, we use the 'modulo' operator. This
 operator is represented by the percentage sign, \%. For example:
 
-\begin{minted}
-    >>> 5\%2
-    \bf{1}
-    >>> 20\%4
-    \bf{0}
-    >>> 121/120
-    \bf{1}
-\end{minted}
+\begin{lstlisting}
+    >>> 5%2
+    1
+    >>> 20%4
+    0
+    >>> 121%120
+    1
+\end{lstlisting}
 
 \subsubsection{Floating-point Numbers}
+
+Floating point numbers are what mathematicians call 'real' numbers. They can
+have almost any decimal value, and their division works in the normal way.
+
+You can force a variable to be 'cast' as a float rather than as a integer by
+simply putting a full stop after it, or by casting it through the function
+'float()':
+
+\begin{lstlisting}
+    >>> a = 2
+    >>> b = 3.
+    >>> c = float(4)
+    >>> d = 1035.2342345234
+    >>> type(a)
+    <type 'int'>
+    >>> type(b)
+    <type 'float'>
+    >>> type(c)
+    <type 'float'>
+    >>> type(d)
+    <type 'float'>
+\end{lstlisting}
+
+\subsubsection{Strings}
+
+Strings, as explained above, are a 'string' of characters. They can be used to
+put 'words' into your program, or more excitingly, we can use the program to
+operate on strings. For example, we can go through each character in the string,
+and move it up two in the alphabet to 'encrypt' it!
+
+Examples like these will be covered later in the course - so get excited!
+
+\subsection{Lists}
+
+Lists are just that - lists of variables. We declare a list in the following
+way:
+
+\begin{lstlisting}
+    >>> list = [1,2,3,4,5,11]
+\end{lstlisting}
+
+In a list, each variable is separated by a comma. We can fill lists with any
+type of object, be it a list, a float, even other lists!
+
+\subsubsection{Indexing}
+
+Lists are indexed to allow us to find values in them easily. The first value in
+the list has an index of 0, the second 1, the third 2, and so on. Lists are also
+negatively indexed, meaning we can find the last object in the list with an
+index of -1, second last -2, and so on.
+
+We access the values in the list by putting the index in square brackets
+following the list. It's best illustrated using an example.
+
+\begin{lstlisting}
+    >>> list[0]
+    1
+    >>> list[3]
+    4
+    >>> list[-1]
+    11
+    >>> list[-3]
+    4
+\end{lstlisting}
+
+Strings are also indexed. For example:
+
+\begin{lstlisting}
+    >>> hi = "Hello World"
+    >>> hi[0]
+    'H'
+    >>> hi[-1]
+    'd'
+\end{lstlisting}
+
+This allows us to do interesting things, for example we can check if the
+extension of a file have the name of is '.png', etc.
+
+\subsection{Definitions}
+
+In this section we will define what some of the terms mean that are scattered
+throughout the book.
+
+\subsubsection{Iteratable}
+
+An Iteratable object is one where you can go through and use each object. They
+are objects that have indexes, so strings and lists are examples of iteratable
+objects. They allow us to write loops using their values, which we will learn
+about in more detail later.
+
+\subsubsection{Function}
+
+A function is a construct that is used to do something over and over again.
+An example of a function is the 'type()' function used above. This function
+takes a variable and then returns its type.
