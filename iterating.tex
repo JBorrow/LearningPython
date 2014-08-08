@@ -62,19 +62,36 @@ do something to it. For example:
 We can even iterate through strings:
 
 \begin{lstlisting}
->>> hi = "Hello World"
->>> for character in hi:
-...     print character
-...
-H
-e
-l
-l
-o
+    >>> hi = "Hello World"
+    >>> for character in hi:
+    ...     print character
+    ...
+    H
+    e
+    l
+    l
+    o
 
-W
-o
-r
-l
-d
+    W
+    o
+    r
+    l
+    d
 \end{lstlisting}
+
+This is because both strings and lists (like many other types in python) are
+\emph{iteratble structures}.
+
+\subsection{A Note on Indentation}
+
+In the code examples you have seen so far, we have used strict indentation.
+After you have a block that requires a colon (if, else statements, while and for
+loops etc.) you must indent the code a block. You can do this either by using
+spaces or tabs - the choice is yours. You must be consistent with this though - 
+the interpreter is very strict about this and does not like a mix of tabs and
+spaces.
+
+This will initially be frustrating, but it makes it faster for the interpreter
+to read your code and makes your code neater, improving readability. Nobody
+wants to read a file where everything is not indented so you can't see which
+statements line up with each other - it's a mess.
