@@ -1,0 +1,89 @@
+\section{Introduction}
+
+This little book should be your guide during this course. We will begin with
+our first program - a simple 'hello world'. This program will aim to teach you
+how to output text to the terminal. Hopefully, you have already read the
+previous section on setting up python on your system, and now when you type
+'python' in the terminal you are presented with three greater than signs, like
+this:
+
+\begin{minted}
+    >>>
+\end{minted}
+
+\subsection{Strings and Variables}
+
+Now, the first thing that we want to be able to do in a programming language is
+declare variables (well, that's up for debate, but for me it is). We declare a
+variable in python by using the '=' character. This means something different
+than when it is used in mathematics - it is an \emph{assignment} operator rather
+than an \emph{equality}.
+
+Because python is a very 'loosely typed' language, this means we can set our
+variables to any type - be it an integer, a floating point number (decimal) or
+a 'string'. A 'string' is a set of characters, such as 'Hello World'. The
+characters are enclosed in a set of quotes or inverted commas.
+
+So if I want to give a variable called 'hi' a value of "Hello World!":
+
+\begin{minted}
+    >>> hi = "Hello World!"
+\end{minted}
+
+The next thing we want to be able to do is print some output to the screen. In
+python, we do this by using 'print'. In python 2.x, this is a pseudofunction,
+meaning it doesn't need brackets - we will learn more about this later. To print
+the value of dog to the screen, we simply need to write:
+
+\begin{minted}
+    >>> print hi
+    \bf{Hello World!}
+\end{minted}
+
+In this book, I will have statements that we type into the prompt/editor as
+a regular monospaced font, and return values in bold.
+
+\subsection{Types of Variable and Definitions}
+
+Now we've got you hooked after writing your first computer program, we have to
+cover some boring stuff. If you want to, you can skip this section and come back
+if some of the words I start to use in the later sections confuse you. We'll
+start by talking about the three basic variable types.
+
+\subsubsection{Integers}
+
+Integers are exactly what you would expect them to be. They can have almost any
+value you want to give them. However, the interesting thing here is division.
+
+When you divide two integers in python, it returns an integer too. This is
+accomplished by simply discarding the remainder. For example:
+
+\begin{minted}
+    >>> 5/2
+    \bf{2}
+    >>> 20/4
+    \bf{5}
+    >>> 121/120
+    \bf{1}
+\end{minted}
+
+This process is called 'integer division', rather than decimal or 'float
+division'.
+
+Integer division can cause some problems, and was changed in python 3 (however
+we're using python 2) so that the division automatically converts the values to
+decimals.
+
+To get the remainder from this division, we use the 'modulo' operator. This
+operator is represented by the percentage sign, \%. For example:
+
+\begin{minted}
+    >>> 5\%2
+    \bf{1}
+    >>> 20\%4
+    \bf{0}
+    >>> 121/120
+    \bf{1}
+\end{minted}
+
+\subsubsection{Floating-point Numbers}
