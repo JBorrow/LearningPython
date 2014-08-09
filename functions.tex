@@ -1,0 +1,46 @@
+\section{Functions}
+
+Functions are our way of cutting down on code re-use. Let's say you want to do
+something several times in your code, for example add two to a number. You could
+just have 'x = x + 2', but that would be inefficient - what happens when you
+want to change it to being 'x = x + 3'? We can deal with this by using a
+function.
+
+\subsection{Function Structure}
+
+Functions have a name, for example 'type'. They are then followed by brackets -
+these must be included in \emph{all} functions, even if you don't need to pass
+any arguments through them. An argument is something you 'give' to the function,
+and are in the brackets:
+
+\begin{lstlisting}
+    >>> type(10)
+    <type 'int'>
+\end{lstlisting}
+
+Here, we give the number '10' (an argument) to the function called 'type', which
+we do by enclosing it in the brackets.
+
+We can even have functions that take more than one argument:
+
+\begin{lstlisting}
+    >>> range(1, 10, 2)
+    [1, 3, 5, 7, 9]
+\end{lstlisting}
+
+This built in function, called 'range()', takes one to three arguments. You can specify only one, and it will give you a list of that many numbers, starting at zero. For example:
+
+\begin{lstlisting}
+    >>> range(9)
+    [0, 1, 2, 3, 4, 5, 6, 7, 8]
+\end{lstlisting}
+
+However, when we give it three arguments, we specify start, stop and step. So
+the range function will give us a list of numbers starting at the first one,
+stopping at the second one, with a step in between of the last number. This is a
+very useful funciton - you will need to create many lists of numbers in your
+time programming and this is much faster than writing them all out yourself!
+
+\subsection{Defining Your own Functions}
+
+
