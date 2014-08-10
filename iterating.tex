@@ -13,7 +13,7 @@ short time. The following statements will show you how to \emph{iterate} over
 \subsection{The while Loop}
 
 The while loop keeps on going until some condition is met. This includes the
-infamous 'while true' loop - which will keep on going forever until either the
+infamous `while true' loop - which will keep on going forever until either the
 program crashes or the user tells it to stop.
 
 Here's an example of a while loop:
@@ -29,26 +29,26 @@ Here's an example of a while loop:
     2
 \end{lstlisting}
 
-This is interesting, because if we hadn't initialised the variable 'x' as 0 to
+This is interesting, because if we hadn't initialised the variable `x' as 0 to
 begin with, then no code inside the while loop would have been executed, as how
-can you check if 'something' is less than 3 if that thing is not a number?
+can you check if `something' is less than 3 if that thing is not a number?
 
-It also showcases what we mean when we say that the '=' sign is an assignment,
-rather than an equality. We can - quite rightfully - say that 'x = x + 1',
+It also showcases what we mean when we say that the `=' sign is an assignment,
+rather than an equality. We can - quite rightfully - say that `x = x + 1',
 whereas if this was mathematics then that would be an impossible statement. What
-this really means is 'take x and set it equal to what it used to be, with one
+this really means is `take x and set it equal to what it used to be, with one
 added'. 
 
 \subsection{The for Loop}
 
 This is where iteratable structures come in (which you would know about if you
-had read the 'boring' bit that I told you could skip - if you're confused then
+had read the `boring' bit that I told you could skip - if you're confused then
 now would be a good time to go back and read it). With the for loop, we can say
 take this structure, and one at a time give me something from it and let me
 do something to it. For example:
 
 \begin{lstlisting}
-    >>> l = ['a', 'b', '1', '2', '7']
+    >>> l = [`a', `b', `1', `2', `7']
     >>> for item in l:
     ...     print item
     ...
@@ -62,7 +62,7 @@ do something to it. For example:
 We can even iterate through strings:
 
 \begin{lstlisting}
-    >>> hi = "Hello World"
+    >>> hi = `Hello World'
     >>> for character in hi:
     ...     print character
     ...

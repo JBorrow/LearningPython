@@ -1,10 +1,10 @@
 \section{Introduction}
 
 This little book should be your guide during this course. We will begin with
-our first program - a simple 'hello world'. This program will aim to teach you
+our first program - a simple `hello world'. This program will aim to teach you
 how to output text to the terminal. Hopefully, you have already read the
 previous section on setting up python on your system, and now when you type
-'python' in the terminal you are presented with three greater than signs, like
+`python' in the terminal you are presented with three greater than signs, like
 this:
 
 \begin{lstlisting}
@@ -15,29 +15,29 @@ this:
 
 Now, the first thing that we want to be able to do in a programming language is
 declare variables (well, that's up for debate, but for me it is). We declare a
-variable in python by using the '=' character. This means something different
+variable in python by using the `=' character. This means something different
 than when it is used in mathematics - it is an \emph{assignment} operator rather
 than an \emph{equality}.
 
-Because python is a very 'loosely typed' language, this means we can set our
+Because python is a very `loosely typed' language, this means we can set our
 variables to any type - be it an integer, a floating point number (decimal) or
-a 'string'. A 'string' is a set of characters, such as 'Hello World'. The
+a `string'. A `string' is a set of characters, such as `Hello World'. The
 characters are enclosed in a set of quotes or inverted commas.
 
-So if I want to give a variable called 'hi' a value of "Hello World!":
+So if I want to give a variable called `hi' a value of ``Hello World!":
 
 \begin{lstlisting}
-    >>> hi = "Hello World!"
+    >>> hi = `Hello World!'
 \end{lstlisting}
 
 The next thing we want to be able to do is print some output to the screen. In
-python, we do this by using 'print'. In python 2.x, this is a pseudofunction,
+python, we do this by using `print'. In python 2.x, this is a pseudofunction,
 meaning it doesn't need brackets - we will learn more about this later. To print
 the value of hi to the screen, we simply need to write:
 
 \begin{lstlisting}
     >>> print hi
-    'Hello World!'
+    `Hello World!'
 \end{lstlisting}
 
 \subsection{Types of Variable}
@@ -64,14 +64,14 @@ accomplished by simply discarding the remainder. For example:
     1
 \end{lstlisting}
 
-This process is called 'integer division', rather than decimal or 'float
+This process is called `integer division', rather than decimal or `float
 division'.
 
 Integer division can cause some problems, and was changed in python 3 (however
 we're using python 2) so that the division automatically converts the values to
 decimals.
 
-To get the remainder from this division, we use the 'modulo' operator. This
+To get the remainder from this division, we use the `modulo' operator. This
 operator is represented by the percentage sign, \%. For example:
 
 \begin{lstlisting}
@@ -85,12 +85,12 @@ operator is represented by the percentage sign, \%. For example:
 
 \subsubsection{Floating-point Numbers}
 
-Floating point numbers are what mathematicians call 'real' numbers. They can
+Floating point numbers are what mathematicians call `real' numbers. They can
 have almost any decimal value, and their division works in the normal way.
 
-You can force a variable to be 'cast' as a float rather than as a integer by
+You can force a variable to be `cast' as a float rather than as a integer by
 simply putting a full stop after it, or by casting it through the function
-'float()':
+`float()':
 
 \begin{lstlisting}
     >>> a = 2
@@ -98,21 +98,21 @@ simply putting a full stop after it, or by casting it through the function
     >>> c = float(4)
     >>> d = 1035.2342345234
     >>> type(a)
-    <type 'int'>
+    <type `int'>
     >>> type(b)
-    <type 'float'>
+    <type `float'>
     >>> type(c)
-    <type 'float'>
+    <type `float'>
     >>> type(d)
-    <type 'float'>
+    <type `float'>
 \end{lstlisting}
 
 \subsubsection{Strings}
 
-Strings, as explained above, are a 'string' of characters. They can be used to
-put 'words' into your program, or more excitingly, we can use the program to
+Strings, as explained above, are a `string' of characters. They can be used to
+put `words' into your program, or more excitingly, we can use the program to
 operate on strings. For example, we can go through each character in the string,
-and move it up two in the alphabet to 'encrypt' it!
+and move it up two in the alphabet to `encrypt' it!
 
 Examples like these will be covered later in the course - so get excited!
 
@@ -152,7 +152,7 @@ following the list. It's best illustrated using an example.
 Strings are also indexed. For example:
 
 \begin{lstlisting}
-    >>> hi = "Hello World"
+    >>> hi = `Hello World'
     >>> hi[0]
     'H'
     >>> hi[-1]
@@ -160,7 +160,7 @@ Strings are also indexed. For example:
 \end{lstlisting}
 
 This allows us to do interesting things, for example we can check if the
-extension of a file have the name of is '.png', etc.
+extension of a file have the name of is `.png', etc.
 
 \subsection{Definitions}
 
@@ -177,5 +177,5 @@ about in more detail later.
 \subsubsection{Function}
 
 A function is a construct that is used to do something over and over again.
-An example of a function is the 'type()' function used above. This function
+An example of a function is the `type()' function used above. This function
 takes a variable and then returns its type.
