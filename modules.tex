@@ -1,0 +1,65 @@
+\section{Loading External Modules}
+
+Python can be used as a modular language, meaning that you keep different
+functions in different files. This allows you to use a function more than once
+without copying and pasting it into the new file.
+
+Importing modules and calling functions from them is very simple. We will begin
+by using a module written by someone else, and then we will move to looking at ones that we have written ourselves.
+
+\subsection{Loading in a Module}
+
+There is a module called `Numpy' that provides a lot of useful mathematical
+tools for python users. If we want to load the module in, we just need to add
+`import numpy' at the top of our file. If we then want to use functions from it,
+for example the `array()' function, we write `numpy.array()'. For example:
+
+\begin{lstlisting}
+    >>> import numpy
+    >>> ourlist = [1,2,3,4]
+    >>> ourarray = numpy.array(ourlist)
+    >>> type(ourarray)
+    <type 'numpy.ndarray'>
+\end{lstlisting}
+
+This code snippet creates a list and then turns it into an array. We will learn
+much more about the numpy module later, in it's own section.
+
+\subsection{Writing and Using Your Own Modules}
+
+It is very simple to write your own modules. We will begin by learning to use
+files to store your python code.
+
+\subsubsection{Writing a python File}
+
+We have been running all of our programs interactively so far. Here, we are
+going to use files to run our python scripts from - which is much easier if you
+make a mistake (you can go back and edit it instead of having to write it all
+again). It's similar to moving from using a pen and paper to using a word
+processor.
+
+If you haven't already chosen and downloaded an editor and become familiar with
+using the terminal, please go and read those sections at the beginning of the
+document as they will be used heavily here.
+
+Open your text editor and write some python code! I would suggest performing a
+simple `hello world' as your first program from file.
+
+Write this:
+\begin{lstlisting}
+    hi = 'Hello World'
+    print hi
+\end{lstlisting}
+
+Save your file, with a `.py' extension, for example `helloworld.py'.
+
+Now, open your command prompt/terminal and change to the directory that the
+python code is stored in (cd), and type:
+
+\begin{lstlisting}
+    python <yourfilename>.py
+\end{lstlisting}
+
+You should now have `Hello World' printed in your console!
+
+
